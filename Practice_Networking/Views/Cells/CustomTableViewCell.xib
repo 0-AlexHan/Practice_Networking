@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomTableViewCell" rowHeight="100" id="KGk-i7-Jjw" customClass="CustomTableViewCell" customModule="Practice_Networking" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UserID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wmh-zr-n0T">
+                        <rect key="frame" x="20" y="8" width="52" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W7y-P8-8oe">
+                        <rect key="frame" x="20" y="55" width="16.5" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2dK-hL-DUc">
+                        <rect key="frame" x="96" y="15" width="298" height="70"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                        <color key="textColor" systemColor="labelColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="wmh-zr-n0T" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" symbolic="YES" id="8gz-1n-Qvb"/>
+                    <constraint firstItem="wmh-zr-n0T" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="CMz-bN-ZLW"/>
+                    <constraint firstItem="2dK-hL-DUc" firstAttribute="leading" secondItem="wmh-zr-n0T" secondAttribute="trailing" constant="24" id="DQZ-Dx-xdL"/>
+                    <constraint firstItem="W7y-P8-8oe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="MPj-Ae-AxC"/>
+                    <constraint firstItem="2dK-hL-DUc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="X9L-Hh-nTc"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="W7y-P8-8oe" secondAttribute="bottom" constant="13" id="Y5N-jD-VgV"/>
+                    <constraint firstAttribute="trailing" secondItem="2dK-hL-DUc" secondAttribute="trailing" constant="20" symbolic="YES" id="aKE-8B-02j"/>
+                    <constraint firstAttribute="bottom" secondItem="2dK-hL-DUc" secondAttribute="bottom" constant="15" id="jMG-Nf-hmg"/>
+                    <constraint firstItem="W7y-P8-8oe" firstAttribute="top" secondItem="wmh-zr-n0T" secondAttribute="bottom" constant="26" id="nJE-kJ-aVg"/>
+                    <constraint firstItem="2dK-hL-DUc" firstAttribute="leading" secondItem="W7y-P8-8oe" secondAttribute="trailing" constant="59.5" id="zkq-QA-lgX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="idLabel" destination="W7y-P8-8oe" id="LEU-km-oQ2"/>
+                <outlet property="titleTextView" destination="2dK-hL-DUc" id="n4A-si-WF1"/>
+                <outlet property="userIdLabel" destination="wmh-zr-n0T" id="R0J-xb-jt5"/>
+            </connections>
+            <point key="canvasLocation" x="123.18840579710145" y="83.705357142857139"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
